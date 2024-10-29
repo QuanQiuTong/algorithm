@@ -76,8 +76,9 @@ def main():
     with open("query.txt", "r") as f:
         query = f.read().strip()
 
-    with open("tuple2400.log", "r") as f:
-        tuples = f.read()
+    # with open("tuple2450.log", "r") as f:
+    #     tuples = f.read()
+    tuples = input("input tuples: ")
 
     print(calculate_value(tuples, ref, query))
 
