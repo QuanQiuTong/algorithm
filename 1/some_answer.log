@@ -1,1 +1,52 @@
-1
+Best parameters: ref_st=6100, ref_en=23700, query_st=6100, query_en=23700
+Best value: 29747
+
+Best parameters: ref_st=6200, ref_en=23600, query_st=6200, query_en=23600
+Best value: 29747
+
+Best parameters: ref_st=6500, ref_en=23300, query_st=6500, query_en=23300
+Best value: 29747
+
+Best parameters: ref_st=6520, ref_en=23300, query_st=6500, query_en=23300
+Best value: 29747
+
+Best parameters: ref_st=6265, ref_en=23550, query_st=6250, query_en=23550
+Best value: 29747
+
+Best parameters: ref_st=6605, ref_en=23200, query_st=6600, query_en=23200
+Best value: 29747
+
+Best parameters: ref_st=6800, ref_en=23040, query_st=6800, query_en=23040
+Best value: 29781
+
+Step: 75
+Best parameters: ref_st=6800, ref_en=23025, query_st=6800, query_en=23025
+Best value: 29797
+
+Step: 60
+Best parameters: ref_st=6540, ref_en=23280, query_st=6520, query_en=23280
+Best value: 29747
+
+Step: 50
+Best parameters: ref_st=6650, ref_en=23200, query_st=6650, query_en=23200
+Best value: 29761
+
+Step: 40
+Best parameters: ref_st=6540, ref_en=23280, query_st=6540, query_en=23280
+Best value: 29787
+
+Step: 10
+Best parameters: ref_st=6500, ref_en=23330, query_st=6500, query_en=23330
+Best value: 29801
+
+Step: 5
+Best parameters: ref_st=6500, ref_en=23330, query_st=6500, query_en=23330
+Best value: 29801
+
+Step: 2
+Best parameters: ref_st=6500, ref_en=23328, query_st=6500, query_en=23328
+Best value: 29803
+
+Step: 1
+Best parameters: ref_st=6520, ref_en=23308, query_st=6520, query_en=23308
+Best value: 29803
