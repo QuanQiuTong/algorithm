@@ -1,0 +1,156 @@
+    int max_value = 2218, min_dist = 1e9;
+    point max_point;
+    for (int i = 2355; i < 2400; ++i)
+        for (int j = 2355; j < 2500; ++j)
+        {
+            int dist = calculate_distance(Ref, query, query, 0, i, 0, j);
+            int value = j - 0 - dist;
+            if (value >= max_value)
+            {
+                max_value = value;
+                max_point = {0, i, 0, j};
+                // std::cout << "i: " << i << " j: " << j << " value: " << value << std::endl;
+                printf("i: %d j: %d value: %d dist: %d\n", i, j, value, dist);
+            }
+        }
+
+    std::cout << max_value << std::endl;
+    auto [ref_st, ref_en, query_st, query_en] = max_point;
+    std::cout << ref_st << " " << ref_en << " " << query_st << " " << query_en << std::endl;
+
+    // i: 2360 j: 2459 value: 2218 dist: 241
+
+
+i: 2355 j: 2466 value: 2219 dist: 247
+i: 2355 j: 2467 value: 2219 dist: 248
+i: 2355 j: 2468 value: 2220 dist: 248
+i: 2355 j: 2469 value: 2222 dist: 247
+i: 2355 j: 2470 value: 2222 dist: 248
+i: 2355 j: 2471 value: 2222 dist: 249
+i: 2355 j: 2472 value: 2224 dist: 248
+i: 2355 j: 2473 value: 2224 dist: 249
+i: 2355 j: 2474 value: 2224 dist: 250
+i: 2355 j: 2475 value: 2224 dist: 251
+i: 2355 j: 2476 value: 2224 dist: 252
+i: 2355 j: 2477 value: 2224 dist: 253
+i: 2355 j: 2478 value: 2224 dist: 254
+i: 2355 j: 2479 value: 2224 dist: 255
+i: 2355 j: 2480 value: 2224 dist: 256
+i: 2355 j: 2481 value: 2224 dist: 257
+i: 2355 j: 2482 value: 2224 dist: 258
+i: 2355 j: 2483 value: 2224 dist: 259
+i: 2355 j: 2484 value: 2224 dist: 260
+i: 2355 j: 2485 value: 2224 dist: 261
+i: 2355 j: 2486 value: 2224 dist: 262
+i: 2355 j: 2487 value: 2224 dist: 263
+i: 2355 j: 2488 value: 2224 dist: 264
+i: 2355 j: 2489 value: 2224 dist: 265
+i: 2355 j: 2490 value: 2224 dist: 266
+i: 2355 j: 2491 value: 2225 dist: 266
+i: 2355 j: 2492 value: 2226 dist: 266
+i: 2355 j: 2493 value: 2226 dist: 267
+i: 2355 j: 2494 value: 2227 dist: 267
+i: 2355 j: 2495 value: 2227 dist: 268
+i: 2355 j: 2496 value: 2227 dist: 269
+i: 2355 j: 2497 value: 2227 dist: 270
+i: 2355 j: 2498 value: 2227 dist: 271
+i: 2355 j: 2499 value: 2227 dist: 272
+i: 2356 j: 2493 value: 2227 dist: 266
+i: 2356 j: 2494 value: 2227 dist: 267
+i: 2356 j: 2495 value: 2228 dist: 267
+i: 2356 j: 2496 value: 2228 dist: 268
+i: 2356 j: 2497 value: 2228 dist: 269
+i: 2356 j: 2498 value: 2228 dist: 270
+i: 2356 j: 2499 value: 2228 dist: 271
+i: 2357 j: 2494 value: 2228 dist: 266
+i: 2357 j: 2495 value: 2228 dist: 267
+i: 2357 j: 2496 value: 2228 dist: 268
+i: 2357 j: 2497 value: 2228 dist: 269
+i: 2357 j: 2498 value: 2229 dist: 269
+i: 2357 j: 2499 value: 2229 dist: 270
+i: 2358 j: 2498 value: 2229 dist: 269
+i: 2358 j: 2499 value: 2229 dist: 270
+i: 2359 j: 2498 value: 2229 dist: 269
+i: 2359 j: 2499 value: 2229 dist: 270
+i: 2360 j: 2491 value: 2229 dist: 262
+i: 2360 j: 2492 value: 2229 dist: 263
+i: 2360 j: 2493 value: 2229 dist: 264
+i: 2360 j: 2494 value: 2229 dist: 265
+i: 2360 j: 2495 value: 2229 dist: 266
+i: 2360 j: 2496 value: 2229 dist: 267
+i: 2360 j: 2497 value: 2229 dist: 268
+i: 2360 j: 2498 value: 2229 dist: 269
+i: 2360 j: 2499 value: 2230 dist: 269
+i: 2361 j: 2494 value: 2230 dist: 264
+i: 2361 j: 2495 value: 2230 dist: 265
+i: 2361 j: 2496 value: 2230 dist: 266
+i: 2361 j: 2497 value: 2230 dist: 267
+i: 2361 j: 2498 value: 2230 dist: 268
+i: 2361 j: 2499 value: 2230 dist: 269
+i: 2362 j: 2493 value: 2230 dist: 263
+i: 2362 j: 2494 value: 2230 dist: 264
+i: 2362 j: 2495 value: 2231 dist: 264
+i: 2362 j: 2496 value: 2231 dist: 265
+i: 2362 j: 2497 value: 2231 dist: 266
+i: 2362 j: 2498 value: 2231 dist: 267
+i: 2362 j: 2499 value: 2231 dist: 268
+i: 2363 j: 2494 value: 2231 dist: 263
+i: 2363 j: 2495 value: 2231 dist: 264
+i: 2363 j: 2496 value: 2231 dist: 265
+i: 2363 j: 2497 value: 2231 dist: 266
+i: 2363 j: 2498 value: 2232 dist: 266
+i: 2363 j: 2499 value: 2232 dist: 267
+i: 2364 j: 2495 value: 2232 dist: 263
+i: 2364 j: 2496 value: 2232 dist: 264
+i: 2364 j: 2497 value: 2232 dist: 265
+i: 2364 j: 2498 value: 2232 dist: 266
+i: 2364 j: 2499 value: 2233 dist: 266
+i: 2365 j: 2496 value: 2233 dist: 263
+i: 2365 j: 2497 value: 2233 dist: 264
+i: 2365 j: 2498 value: 2233 dist: 265
+i: 2365 j: 2499 value: 2233 dist: 266
+i: 2366 j: 2497 value: 2233 dist: 264
+i: 2366 j: 2498 value: 2234 dist: 264
+i: 2366 j: 2499 value: 2234 dist: 265
+i: 2367 j: 2499 value: 2234 dist: 265
+i: 2369 j: 2499 value: 2234 dist: 265
+i: 2371 j: 2498 value: 2234 dist: 264
+i: 2371 j: 2499 value: 2234 dist: 265
+i: 2372 j: 2498 value: 2234 dist: 264
+i: 2372 j: 2499 value: 2234 dist: 265
+i: 2373 j: 2495 value: 2234 dist: 261
+i: 2373 j: 2496 value: 2234 dist: 262
+i: 2373 j: 2497 value: 2234 dist: 263
+i: 2373 j: 2498 value: 2234 dist: 264
+i: 2373 j: 2499 value: 2235 dist: 264
+i: 2374 j: 2498 value: 2235 dist: 263
+i: 2374 j: 2499 value: 2235 dist: 264
+i: 2375 j: 2497 value: 2235 dist: 262
+i: 2375 j: 2498 value: 2235 dist: 263
+i: 2375 j: 2499 value: 2235 dist: 264
+i: 2376 j: 2498 value: 2235 dist: 263
+i: 2376 j: 2499 value: 2235 dist: 264
+i: 2377 j: 2499 value: 2235 dist: 264
+i: 2378 j: 2499 value: 2235 dist: 264
+i: 2380 j: 2499 value: 2235 dist: 264
+i: 2381 j: 2498 value: 2235 dist: 263
+i: 2381 j: 2499 value: 2235 dist: 264
+i: 2382 j: 2495 value: 2235 dist: 260
+i: 2382 j: 2496 value: 2235 dist: 261
+i: 2382 j: 2497 value: 2235 dist: 262
+i: 2382 j: 2498 value: 2235 dist: 263
+i: 2382 j: 2499 value: 2236 dist: 263
+i: 2383 j: 2498 value: 2236 dist: 262
+i: 2383 j: 2499 value: 2236 dist: 263
+i: 2384 j: 2498 value: 2236 dist: 262
+i: 2384 j: 2499 value: 2236 dist: 263
+i: 2385 j: 2499 value: 2236 dist: 263
+i: 2386 j: 2498 value: 2236 dist: 262
+i: 2386 j: 2499 value: 2236 dist: 263
+i: 2387 j: 2499 value: 2236 dist: 263
+i: 2388 j: 2499 value: 2236 dist: 263
+i: 2392 j: 2498 value: 2236 dist: 262
+i: 2392 j: 2499 value: 2236 dist: 263
+i: 2393 j: 2499 value: 2236 dist: 263
+2236
+0 2393 0 2499
