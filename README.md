@@ -19,3 +19,10 @@ Contributors:
 
 演示用的文稿和代码
 
+## Directory Structure
+
+`answer.log` shows the best answers for now.
+
+In `./1` and `./2` are legacy codes for reference.
+
+`./utils` contains code for dividing chromosomes and calculating scores.
