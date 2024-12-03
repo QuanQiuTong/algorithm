@@ -81,7 +81,7 @@ int devide_fasta(char *pFileData, DWORD fileSizeLow)
 
 int main()
 {
-    const char *input_filename = "GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta";
+    const char *input_filename = "../GCA_000001405.15_GRCh38_no_alt_analysis_set.fasta";
     HANDLE hFile = CreateFile(input_filename, GENERIC_READ, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
     if (hFile == INVALID_HANDLE_VALUE)
     {
